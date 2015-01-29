@@ -155,8 +155,9 @@ service nagios restart
 chkconfig npcd on
 service npcd restart
 
-
 echo "安装结束，请按照readme.txt设置发送邮箱地址。打开浏览器输入:http://$ip/nagios 访问"
-echo "Success!please open Browser Visit website:http://$ip/nagios"
+echo "Success!But you have to "vi /etc/mail.rc" set smtp server like"set from=xtlyk@163.com smtp=smtp.163.com set smtp-auth-user=xtlyk@163.com smtp-auth-password=000000 smtp-auth=login"
+echo "please open Browser Visit website:http://$ip/nagios"
 
 echo " thinks from chinese mars.liu"
+
